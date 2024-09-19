@@ -56,16 +56,16 @@
             if (deferredPrompt) {
                 console.log('???');
                 
-                // deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                console.log(outcome,"outcome?");
+                deferredPrompt.prompt();
+                // const { outcome } = await deferredPrompt.userChoice;
+                // console.log(outcome,"outcome?");
                 
-                addDebugInfo('User choice: ' + outcome);
-                if (outcome === 'accepted') {
-                    statusText.textContent = 'App installed successfully!';
-                } else {
-                    statusText.textContent = 'App installation was declined.';
-                }
+                // addDebugInfo('User choice: ' + outcome);
+                // if (outcome === 'accepted') {
+                //     statusText.textContent = 'App installed successfully!';
+                // } else {
+                //     statusText.textContent = 'App installation was declined.';
+                // }
                 deferredPrompt = null;
                 installBtn.style.display = 'none';
             } else {

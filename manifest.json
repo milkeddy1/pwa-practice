@@ -8,7 +8,6 @@
     }
   ],
   "start_url": "/?start_url",
-  "scope": "/",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
