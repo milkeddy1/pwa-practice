@@ -31,7 +31,7 @@
             addDebugInfo('Page loaded. Checking PWA support...');
             if ('serviceWorker' in navigator) {
                 addDebugInfo('Service Worker is supported');
-                navigator.serviceWorker.register('sw.js')
+                navigator.serviceWorker.register('/sw.js')
                     .then(reg => addDebugInfo('Service Worker registered'))
                     .catch(err => addDebugInfo('Service Worker registration failed: ' + err));
             } else {
@@ -40,6 +40,8 @@
         });
 
         window.addEventListener('beforeinstallprompt', (e) => {
+            console.log('beforeinstallprompt been triggered...');
+            
             addDebugInfo('Install prompt triggered');
             e.preventDefault();
             deferredPrompt = e;
