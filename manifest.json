@@ -1,25 +1,24 @@
 {
-  "name": "Simple PWA",
-  "short_name": "PWA",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "name": "Squoosh App",
   "icons": [
     {
-        "src": "icon.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "form_factor": "wide"
+      "src": "https://cdn.glitch.com/1163eaec-58f8-4386-9c02-ffc75c3a5e45%2Flarge-icon.png?v=1589352660115",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-],
-"screenshots" : [
-  {
-    "src": "icon.png",
-    "sizes": "240x240",
-    "type": "image/png",
-    "form_factor": "wide",
-    "label": "Homescreen of Awesome App"
-  }
-]
+  ],
+  "start_url": "/?start_url",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+ 
+  "screenshots": [
+    {
+      "src": "https://i.pinimg.com/originals/a9/88/c1/a988c1bf6e66482d5292e2c0c52f2dde.gif",
+      "sizes": "320x640",
+      "type": "image/gif"
+    } 
+  ]
+  
 }
