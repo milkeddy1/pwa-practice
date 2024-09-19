@@ -50,10 +50,16 @@
         });
 
         installBtn.addEventListener('click', async () => {
-            addDebugInfo('Install button clicked');
+            console.log(deferredPrompt,"deferredPrompt");
+            addDebugInfo('Install button clicked.....');
+            
             if (deferredPrompt) {
-                deferredPrompt.prompt();
+                console.log('???');
+                
+                // deferredPrompt.prompt();
                 const { outcome } = await deferredPrompt.userChoice;
+                console.log(outcome,"outcome?");
+                
                 addDebugInfo('User choice: ' + outcome);
                 if (outcome === 'accepted') {
                     statusText.textContent = 'App installed successfully!';
