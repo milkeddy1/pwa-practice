@@ -12,5 +12,14 @@
         "type": "image/png",
         "form_factor": "wide"
     }
+],
+"screenshots" : [
+  {
+    "src": "icon.png",
+    "sizes": "240x240",
+    "type": "image/png",
+    "form_factor": "wide",
+    "label": "Homescreen of Awesome App"
+  }
 ]
 }
